@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import NavItem from "@/sections/navbar/components/NavItem"
@@ -14,11 +14,20 @@ const Items = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }, [isOpen])
+
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md">
-      <div className="mx-auto px-6 lg:px-12">
-        <div className="max-w-7xl mx-auto flex justify-between items-center py-5">
-          <Link href="/">
+    <nav className="fixed top-0 w-full z-50">
+      <div className={`relative z-100 w-full transition-colors duration-300 ${isOpen ? 'bg-black' : 'bg-black/50 backdrop-blur-md'}`}>
+        <div className="mx-auto px-6 lg:px-12 max-w-7xl flex justify-between items-center py-5">
+
+          <Link href="/" onClick={() => setIsOpen(false)}>
             <div className="flex flex-col items-start leading-tight">
               <p className="font-bold text-xl font-syne text-gray-300">NEXUS</p>
               <p className="font-thin text-[10px] uppercase tracking-widest text-white">
@@ -36,29 +45,31 @@ const Navbar = () => {
             ))}
           </div>
           <button
-            className="xl:hidden text-white p-2"
+            className="xl:hidden text-white p-2 outline-none"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
+            {isOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
         </div>
       </div>
-
       <div className={`
-        fixed inset-0 bg-black z-40 flex flex-col items-center justify-center space-y-8 text-2xl
-        transition-transform duration-300 ease-in-out lg:hidden
-        ${isOpen ? "translate-x-0" : "translate-x-full"}
+        fixed inset-0 bg-black z-90 flex flex-col items-center justify-center
+        transition-all duration-500 ease-in-out xl:hidden
+        ${isOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-full"}
       `}>
-        {Items.map((item) => (
-          <a
-            key={item.id}
-            href={item.reference}
-            onClick={() => setIsOpen(false)}
-            className="text-white font-space-grotesk hover:text-green-400"
-          >
-            {item.content}
-          </a>
-        ))}
+        <div className="flex flex-col items-center space-y-8">
+          <p className="text-gray-500 font-syne text-md  uppercase tracking-[0.3em] mb-4">Navegación</p>
+          {Items.map((item) => (
+            <a
+              key={item.id}
+              href={item.reference}
+              onClick={() => setIsOpen(false)}
+              className="text-white font-space-grotesk text-2xl font-bold hover:text-green-400 transition-transform active:scale-90"
+            >
+              {item.content}
+            </a>
+          ))}
+        </div>
       </div>
     </nav>
   )
