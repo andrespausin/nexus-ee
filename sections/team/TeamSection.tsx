@@ -4,7 +4,7 @@ import { TeamData } from "./team.data"
 
 const TeamSection = () => {
   return (
-    <section className="w-full px-4 md:px-8 py-20 overflow-hidden">
+    <section className="w-full px-4 md:px-8 py-30 overflow-hidden">
       <main className="flex flex-col  items-center" >
         <h1 className="text-white text-3xl md:text-6xl font-extrabold uppercase">Nuestro equipo</h1>
         <Carousel
@@ -29,7 +29,7 @@ const TeamSection = () => {
               })
             }
           </CarouselContent>
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <CarouselPrevious />
             <CarouselNext />
           </div>
