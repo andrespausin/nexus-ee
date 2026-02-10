@@ -4,12 +4,18 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import NavItem from "@/sections/navbar/components/NavItem"
 
-const Items = [
-  { id: 1, content: "Sobre nosotros", reference: "#about" },
-  { id: 2, content: "Servicios", reference: "#services" },
-  { id: 4, content: "Proyectos", reference: "#projects" },
-  { id: 3, content: "Contáctanos", reference: "#contact_us" },
-]
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle
+} from "@/components/ui/navigation-menu";
+
+import { Items } from "./navbar.data"
+import ListItem from "./components/ListItem"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -23,7 +29,7 @@ const Navbar = () => {
   }, [isOpen])
 
   return (
-    <nav className="fixed top-0 w-full z-50">
+    <section className="fixed top-0 w-full z-50">
       <div className={`relative z-100 w-full transition-colors duration-300 ${isOpen ? 'bg-black' : 'bg-black/50 backdrop-blur-md'}`}>
         <div className="mx-auto px-6 lg:px-12 max-w-7xl flex justify-between items-center py-5">
 
@@ -36,13 +42,42 @@ const Navbar = () => {
             </div>
           </Link>
           <div className="hidden xl:flex space-x-10 font-space-grotesk text-white">
-            {Items.map((item) => (
-              <NavItem key={item.id}>
-                <a href={item.reference} className="hover:text-green-400 transition-colors">
-                  {item.content}
-                </a>
-              </NavItem>
-            ))}
+            <NavigationMenu>
+              <NavigationMenuList>
+                {Items.map((item) => (
+                  <NavigationMenuItem key={item.id}>
+                    {item.dropdown ? (
+                      <>
+                        <NavigationMenuTrigger>
+                          {item.content}
+                        </NavigationMenuTrigger>
+                        <NavigationMenuContent
+                          className="bg-black/80 backdrop-blur-3xl border-0"
+                        >
+                          <ul className="grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
+                            {item.dropdown.map((itemList) => (
+                              <ListItem
+                                key={itemList.id}
+                                title={itemList.title}
+                                reference={itemList.reference}
+                                description={itemList.description}
+                              />
+                            ))}
+                          </ul>
+                        </NavigationMenuContent>
+                      </>
+                    ) : (
+                      // CASO B: LINK SIMPLE
+                      <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href={item.reference}>
+                          {item.content}
+                        </Link>
+                      </NavigationMenuLink>
+                    )}
+                  </NavigationMenuItem>
+                ))}
+              </NavigationMenuList>
+            </NavigationMenu>
           </div>
           <button
             className="xl:hidden text-white p-2 outline-none"
@@ -71,7 +106,7 @@ const Navbar = () => {
           ))}
         </div>
       </div>
-    </nav>
+    </section >
   )
 }
 
