@@ -12,7 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle
-} from "@/components/ui/navigation-menu";
+} from "@/shared/components/ui/navigation-menu";
 
 import { Items } from "./navbar.data"
 import ListItem from "./components/ListItem"
@@ -54,9 +54,10 @@ const Navbar = () => {
                         <NavigationMenuContent
                           className="bg-black/80 backdrop-blur-3xl border-0"
                         >
-                          <ul className="grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
+                          <ul className="grid w-100 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150 group">
                             {item.dropdown.map((itemList) => (
                               <ListItem
+                                className="group-hover:scale-[0.95] transition-all duration-300 hover:scale-105 ! hover:z-10"
                                 key={itemList.id}
                                 title={itemList.title}
                                 reference={itemList.reference}
@@ -67,7 +68,6 @@ const Navbar = () => {
                         </NavigationMenuContent>
                       </>
                     ) : (
-                      // CASO B: LINK SIMPLE
                       <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                         <Link href={item.reference}>
                           {item.content}
