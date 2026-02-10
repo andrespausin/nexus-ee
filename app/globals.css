@@ -11,6 +11,15 @@ body {
   position: relative;
 }
 
+
+@theme {
+  --font-roboto-sans: var(--font-roboto-sans);
+  --font-instrument-serif: var(--font-instrument-serif);
+  --font-space-grotesk: var(--font-space-grotesk);
+  --font-syne: var(--font-syne);
+  --font-newsreader: var(--font-newsreader);
+}
+
 /* @custom-variant dark (&:is(.dark *));
 
 @theme inline {

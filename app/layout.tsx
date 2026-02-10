@@ -1,4 +1,4 @@
-import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Inter } from "next/font/google";
+import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Newsreader } from "next/font/google";
 import Navbar from "@/sections/navbar/Navbar";
 import "./globals.css";
 
@@ -26,10 +26,10 @@ const spaceGrotesk = Space_Grotesk({
   weight: "400"
 })
 
-const inter = Inter({
-  variable: "--font-inter",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
-  weight: "400"
+  weight: ["200", "300", "400", "500", "600", "700", "800"]
 })
 
 export default function RootLayout({
@@ -38,7 +38,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable} ${inter.variable}`}>
+    <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable} ${newsreader.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
