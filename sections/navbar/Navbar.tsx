@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <section className="fixed top-0 w-full z-50">
-      <div className={`relative z-100 w-full transition-colors duration-300 ${isOpen ? 'bg-black' : 'bg-black/50 backdrop-blur-md'}`}>
+      <div className={`relative z-100 w-full transition-colors duration-300 ${isOpen ? 'bg-black' : 'bg-transparent backdrop-blur-sm'}`}>
         <div className="mx-auto px-6 lg:px-12 max-w-7xl flex justify-between items-center py-5">
 
           <Link href="/" onClick={() => setIsOpen(false)}>
