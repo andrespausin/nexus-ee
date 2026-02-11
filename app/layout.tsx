@@ -1,6 +1,7 @@
 import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Newsreader } from "next/font/google";
 import Navbar from "@/sections/navbar/Navbar";
 import "./globals.css";
+import Footer from "@/sections/footer/Footer";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -46,6 +47,7 @@ export default function RootLayout({
       <body className="bg-black">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

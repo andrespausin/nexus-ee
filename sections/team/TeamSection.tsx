@@ -14,7 +14,7 @@ const TeamSection = () => {
     <section className="w-full px-4 md:px-15 py-30 overflow-hidden">
       <main className="flex flex-col items-center">
         <h1 className="text-white text-3xl md:text-6xl font-extrabold uppercase mb-10">
-          Nuestro equipo
+          Nuestro <span className="text-blue-500">equipo</span>
         </h1>
 
         <Carousel
@@ -22,14 +22,13 @@ const TeamSection = () => {
           className="w-full max-w-[100vw] overflow-visible"
         >
           <CarouselContent className="
-            -ml-4 h-[600px] items-center 
+            -ml-4 h-150 items-center 
             pr-10 md:pr-40
-            
             [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:scale-75 
             [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:opacity-30 
             [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:grayscale-[0.8]
           ">
-            {TeamData.map((item) => { // Quitamos 'index'
+            {TeamData.map((item) => {
               return (
                 <CarouselItem
                   key={item.id}
