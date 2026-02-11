@@ -52,7 +52,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center space-x-3">
               <Mail size={18} className="text-blue-500 shrink-0" />
-              <span>contacto@nexus-eng.com</span>
+              <span>administracion@nexusee.com</span>
             </li>
           </ul>
         </div>

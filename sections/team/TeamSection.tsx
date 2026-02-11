@@ -22,34 +22,37 @@ const TeamSection = () => {
           className="w-full max-w-[100vw] overflow-visible"
         >
           <CarouselContent className="
-            -ml-4 h-150 items-center 
-            pr-10 md:pr-40
-            [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:scale-75 
-            [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:opacity-30 
-            [&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:grayscale-[0.8]
+    -ml-4 
+    /* 1. Eliminamos h-150 y usamos py para dar espacio arriba/abajo si es necesario */
+    py-10 
+    items-center 
+    pr-10 md:pr-40
+    xl:[&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:scale-75 
+    xl:[&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:opacity-30 
+    xl:[&:has(.card-wrapper:hover)_.card-wrapper:not(:hover)]:grayscale-[0.8]
+">
+            {TeamData.map((item) => (
+              <CarouselItem
+                key={item.id}
+                className="pl-4 basis-auto flex items-center justify-center" // 2. Centramos el contenido internamente
+              >
+                <div className="
+            card-wrapper relative
+            transition-all duration-500 ease-out
+            xl:hover:z-50
+            origin-center
+            /* 3. Aseguramos que el wrapper no se estire locamente */
+            h-fit 
           ">
-            {TeamData.map((item) => {
-              return (
-                <CarouselItem
-                  key={item.id}
-                  className="pl-4 basis-auto"
-                >
-                  <div className="
-                    card-wrapper relative
-                    transition-all duration-500 ease-out
-                    hover:z-50
-                    origin-center
-                  ">
-                    <StyledCard
-                      jobTitle={item.jobTitle}
-                      content={item.content}
-                      name={item.name}
-                      imageURL={item.imageURL}
-                    />
-                  </div>
-                </CarouselItem>
-              )
-            })}
+                  <StyledCard
+                    jobTitle={item.jobTitle}
+                    content={item.content}
+                    name={item.name}
+                    imageURL={item.imageURL}
+                  />
+                </div>
+              </CarouselItem>
+            ))}
           </CarouselContent>
 
           <div className="hidden xl:flex justify-end gap-4 mt-2 px-4">
