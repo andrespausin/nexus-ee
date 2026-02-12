@@ -19,13 +19,7 @@ const StyledCard = ({ jobTitle, content, name, imageURL }: Props) => {
     } else {
       setIsReversed(false);
     }
-    // setTimeout(() => {
-    //   cardRef.current?.scrollIntoView({
-    //     behavior: 'smooth',
-    //     block: 'nearest',
-    //     inline: 'nearest'
-    //   });
-    // }, 50);
+
   };
 
   return (
