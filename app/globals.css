@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
-  /* Esto evita que elementos posicionados absolutamente "empujen" el ancho */
   position: relative;
 }
 
