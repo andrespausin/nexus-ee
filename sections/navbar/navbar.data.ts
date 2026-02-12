@@ -2,7 +2,7 @@ export const Items = [
   {
     id: 1,
     content: "Sobre nosotros",
-    reference: "/#about",
+    reference: "/about",
   },
   {
     id: 2,

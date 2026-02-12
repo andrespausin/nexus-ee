@@ -19,13 +19,13 @@ const StyledCard = ({ jobTitle, content, name, imageURL }: Props) => {
     } else {
       setIsReversed(false);
     }
-    setTimeout(() => {
-      cardRef.current?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'nearest'
-      });
-    }, 50);
+    // setTimeout(() => {
+    //   cardRef.current?.scrollIntoView({
+    //     behavior: 'smooth',
+    //     block: 'nearest',
+    //     inline: 'nearest'
+    //   });
+    // }, 50);
   };
 
   return (
@@ -34,29 +34,22 @@ const StyledCard = ({ jobTitle, content, name, imageURL }: Props) => {
       onMouseEnter={handleMouseEnter}
       className={`
         group flex flex-col items-center
-        
-        /* ANCHO BASE */
         w-75 md:w-87.5 xl:w-fit
-        
         bg-white rounded-2xl overflow-hidden shadow-2xl 
-        
         transition-all duration-500 ease-in-out
-        
-        /* DIRECCIÓN DINÁMICA */
         ${isReversed ? "xl:flex-row-reverse" : "xl:flex-row"}
-        
-        /* MARGEN NEGATIVO INTELIGENTE */
         ${isReversed ? "xl:hover:-ml-100" : "xl:hover:ml-0"}
       `}
     >
       <div className="relative flex items-center justify-center p-6 shrink-0 z-10 bg-white">
         <div className="relative w-64 h-64 md:w-72 md:h-72 xl:w-80 xl:h-96">
-          <div className="absolute inset-0 bg-green-300 rounded-[60%_40%_30%_70%/60%_30%_70%_40%]"></div>
-          <img
-            src={imageURL}
-            alt="Trabajador"
-            className="relative z-10 w-full h-full object-cover rounded-[60%_40%_30%_70%/60%_30%_70%_40%]"
-          />
+          <div className="absolute inset-0 bg-green-300 rounded-[60%_40%_30%_70%/60%_30%_70%_40%]">
+            <img
+              src={imageURL}
+              alt="Trabajador"
+              className="relative z-10 w-full h-full object-cover rounded-[60%_40%_30%_70%/60%_30%_70%_40%]"
+            />
+          </div>
         </div>
       </div>
       <div className={`
@@ -68,7 +61,7 @@ const StyledCard = ({ jobTitle, content, name, imageURL }: Props) => {
           xl:group-hover:p-10 
           xl:group-hover:opacity-100
       `}>
-        <div className="flex flex-col gap-4 text-center xl:text-left min-w-75">
+        <div className="flex flex-col gap-4 text-center xl:text-left w-full xl:w-80">
           <h1 className="text-black text-2xl xl:text-4xl font-extrabold leading-tight">
             {jobTitle}
           </h1>
