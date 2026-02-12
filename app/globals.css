@@ -19,6 +19,18 @@ body {
   --font-newsreader: var(--font-newsreader);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* @custom-variant dark (&:is(.dark *));
 
 @theme inline {
