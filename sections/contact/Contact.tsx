@@ -2,7 +2,7 @@ import ContactForm from "./component/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section className="w-full py-24 bg-black border-t border-white/5">
+    <section id="contact_us" className="w-full py-24 bg-black border-t border-white/5">
       <div className="max-w-7xl px-6 mx-auto">
         <div className="mb-20 text-center md:text-left">
           <span className="text-blue-500 font-mono text-xs tracking-[0.5em] uppercase block mb-4">
@@ -24,7 +24,7 @@ const ContactSection = () => {
                     <span className="w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse" />
                     Localización Física
                   </h3>
-                  <p className="text-white text-2xl font-bold tracking-tight">
+                  <p className="text-white lg:text-2xl font-bold tracking-tight">
                     Av. de la Castellana, 14 <br />
                     <span className="text-gray-500">Madrid, España.</span>
                   </p>
@@ -34,9 +34,9 @@ const ContactSection = () => {
                   <h3 className="text-blue-500 font-mono text-[10px] uppercase tracking-[0.3em] mb-6">
                     Enlace directo
                   </h3>
-                  <div className="space-y-2">
-                    <p className="text-white text-2xl font-bold hover:text-blue-400 transition-colors cursor-pointer">
-                      +34 661 466 765
+                  <div className="space-y-2 lg:text-2xl">
+                    <p className="text-white font-bold hover:text-blue-400 transition-colors cursor-pointer">
+                      +XX XXX XXX XXX
                     </p>
                     <p className="text-gray-400 text-lg hover:text-blue-400 transition-colors cursor-pointer">
                       administracion@nexusee.com
@@ -44,8 +44,6 @@ const ContactSection = () => {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
           <div className="lg:col-span-7 p-10 bg-white/3 backdrop-blur-xl border border-white/10 rounded-[2.5rem]">

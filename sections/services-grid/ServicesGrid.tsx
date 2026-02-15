@@ -4,7 +4,7 @@ import { servicesData } from "./services.data";
 
 const ServicesGrid = () => {
   return (
-    <section className="w-full py-24 bg-black">
+    <section id="services" className="w-full py-24 bg-black">
       <div className="max-w-7xl px-6 mx-auto">
         <div className="mb-32">
           <span className="text-blue-500 font-mono text-sm tracking-[0.5em] uppercase block mb-4">
@@ -45,7 +45,7 @@ const ServicesGrid = () => {
                 <span className="text-blue-600 font-mono text-4xl font-black mb-6 opacity-20 group-hover:opacity-100 transition-opacity">
                   0{index + 1}
                 </span>
-                <h3 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[0.9] mb-8 group-hover:translate-x-4 transition-transform duration-500">
+                <h3 className="text-white text-4xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9] mb-8 group-hover:translate-x-4 transition-transform duration-500">
                   {service.title}
                 </h3>
 
