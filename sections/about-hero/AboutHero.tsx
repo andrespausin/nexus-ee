@@ -11,7 +11,6 @@ const AboutHero = () => {
           className="object-cover"
           priority
         />
-
         <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-blue-900/80 to-slate-900/90 mix-blend-multiply" />
       </div>
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-6">
@@ -25,7 +24,7 @@ const AboutHero = () => {
           En Nexus, fusionamos la innovación técnica con la energía sostenible para desarrollar soluciones que impulsan el progreso industrial.
         </p>
       </div>
-      <div className="absolute bottom-0 w-full h-24 bg-linear-to-t from-[#0a0a0a] to-transparent z-20" />
+      <div className="absolute inset-0 bg-linear-to-b from-black/20 via-blue-900/20 to-black" />
     </section>
   );
 };
