@@ -24,19 +24,30 @@ const Footer = () => {
         <div>
           <h3 className="font-bold uppercase tracking-wider text-sm mb-6">Explorar</h3>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li><Link href="/sobre-nosotros" className="hover:text-white transition-colors">Sobre Nosotros</Link></li>
-            <li><Link href="/servicios" className="hover:text-white transition-colors">Nuestras Soluciones</Link></li>
-            <li><Link href="/proyectos" className="hover:text-white transition-colors">Proyectos</Link></li>
-            <li><Link href="/contacto" className="hover:text-white transition-colors">Contacto</Link></li>
+            <li><Link href="/about" className="hover:text-white transition-colors">Sobre Nosotros</Link></li>
+            <li><Link href="/#services" className="hover:text-white transition-colors">Nuestras Soluciones</Link></li>
+            <li><Link href="/#contact_us" className="hover:text-white transition-colors">Contacto</Link></li>
           </ul>
         </div>
         <div>
           <h3 className="font-bold uppercase tracking-wider text-sm mb-6">Servicios</h3>
           <ul className="space-y-4 text-sm text-gray-400">
-            <li>Ingeniería Estructural</li>
-            <li>Sistemas de Andamiaje</li>
-            <li>Project Management</li>
-            <li>Consultoría Técnica</li>
+            <li>
+              <Link href="/services/civil-engineer" className="hover:text-white transition-colors">
+                Ingeniería civil
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/scaffolding" className="hover:text-white transition-colors">
+                Sistemas de Andamiaje
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/project-management" className="hover:text-white transition-colors">
+                Project Management
+              </Link>
+            </li>
+            {/* <li>Consultoría Técnica</li> */}
           </ul>
         </div>
         <div>
@@ -44,7 +55,8 @@ const Footer = () => {
           <ul className="space-y-4 text-sm text-gray-400">
             <li className="flex items-start space-x-3">
               <MapPin size={18} className="text-blue-500 shrink-0" />
-              <span>Dirección Principal de la Empresa, Ciudad, País.</span>
+              <span>Av. de la Castellana, 14
+                Madrid, España.</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone size={18} className="text-blue-500 shrink-0" />
@@ -65,7 +77,7 @@ const Footer = () => {
           <Link href="/terminos" className="hover:text-white">Términos de Servicio</Link>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 };
 
