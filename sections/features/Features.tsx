@@ -37,12 +37,6 @@ const Features = () => {
                 <CardDescription className="text-gray-400 text-base leading-relaxed">
                   {item.description}
                 </CardDescription>
-
-                {/* Detalle de métricas que ya tenías pensado */}
-                <div className="mt-6 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <span className="text-[10px] font-mono text-blue-400 border border-blue-400/30 px-2 py-0.5">ESTÁNDAR_ISO</span>
-                  <span className="text-[10px] font-mono text-blue-400 border border-blue-400/30 px-2 py-0.5">OPTIM_COST</span>
-                </div>
               </div>
             </Card>
           ))}
