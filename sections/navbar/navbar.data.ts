@@ -1,5 +1,10 @@
 export const Items = [
   {
+    id: 0,
+    content: "Home",
+    reference: "/"
+  },
+  {
     id: 1,
     content: "Sobre nosotros",
     reference: "/about",
@@ -29,11 +34,6 @@ export const Items = [
       }
     ]
   },
-  // {
-  //   id: 4,
-  //   content: "Proyectos",
-  //   reference: "/#projects"
-  // },
   {
     id: 3,
     content: "Contáctanos",
