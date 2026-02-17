@@ -21,38 +21,54 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-linear-to-b from-black/20 via-blue-900/20 to-black" />
       </motion.div>
+
       <motion.div
         style={{ y: yText, opacity }}
-        className="relative z-10 w-full max-w-7xl px-6 md:px-12 text-center md:text-left"
+        className="relative z-10 w-full max-w-7xl px-6 md:px-12 text-center mt-50"
       >
-        <motion.span
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-blue-500 font-mono text-xs md:text-sm tracking-[0.5em] uppercase mb-4 block"
-        >
-          Nexus Engineering & Energy
-        </motion.span>
-
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-white text-5xl md:text-8xl font-black uppercase tracking-tighter leading-[0.85]"
         >
-          Gerencia y <br /> Dirección <br />
+          Gerencia, Dirección y <br /> Ejecución <br />
           <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-600">
             Responsable
           </span>
         </motion.h1>
+
         <motion.div
           initial={{ width: 0 }}
-          animate={{ width: "100px" }}
+          animate={{ width: "50rem" }}
           transition={{ duration: 1.5, delay: 0.5 }}
-          className="h-1 bg-blue-500 mt-8 hidden md:block"
+          className="h-1 bg-blue-500 mt-3 hidden xl:flex xl:relative xl:left-50"
         />
-      </motion.div>
 
+        <motion.span
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-blue-500 font-mono text-sm md:text-lg tracking-[0.5em] uppercase mb-4 block mt-2"
+        >
+          Nexus Engineering & Energy
+        </motion.span>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex justify-center"
+        >
+          <div className="relative w-32 h-32 md:w-60 md:h-60">
+            <Image
+              src="/nexus-bg.png"
+              alt="Logo Nexus"
+              fill
+              className="object-contain"
+            />
+          </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
