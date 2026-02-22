@@ -7,12 +7,14 @@ const ServicesGrid = () => {
     <section id="services" className="w-full py-24 bg-black">
       <div className="max-w-7xl px-6 mx-auto">
         <div className="mb-32">
-          <span className="text-blue-500 font-mono text-sm tracking-[0.5em] uppercase block mb-4">
-            NUESTRAS SOLUCIONES
-          </span>
-          <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
-            Nuestros <span className="text-blue-600">Servicios</span>
-          </h2>
+          <div className="mb-16 border-l-2 border-blue-600 pl-6">
+            <span className="text-blue-500 font-mono text-sm tracking-[0.5em] uppercase block mb-4">
+              NUESTRAS SOLUCIONES
+            </span>
+            <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
+              ¿QUÉ <span className="text-blue-600">HACEMOS?</span>
+            </h2>
+          </div>
         </div>
         <div className="flex flex-col gap-40 md:gap-64">
           {servicesData.map((service, index) => (
@@ -22,7 +24,7 @@ const ServicesGrid = () => {
               className={`group relative flex flex-col ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                 } items-center gap-12 md:gap-24`}
             >
-              <div className="relative w-full md:w-[45%] aspect-video md:aspect-square overflow-visible group">
+              <div className="relative w-full md:w-[40%] aspect-video md:aspect-square overflow-visible group">
                 <div
                   className="relative w-full h-full overflow-hidden transition-all duration-700 ease-in-out shadow-2xl shadow-blue-900/20"
                   style={{
@@ -34,7 +36,7 @@ const ServicesGrid = () => {
                     alt={service.title}
                     fill
                     priority
-                    className="object-cover transition-transform duration-1000 group-hover:scale-110"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition-colors duration-700" />
                   <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent opacity-60" />

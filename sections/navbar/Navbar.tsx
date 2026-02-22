@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { Menu, X, ChevronDown } from "lucide-react" // Añadimos ChevronDown para el indicador
+import { Menu, X, ChevronDown } from "lucide-react"
 
 import {
   NavigationMenu,
@@ -26,7 +26,7 @@ const Navbar = () => {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
-      setOpenDropdown(null) // Reseteamos los dropdowns al cerrar el menú
+      setOpenDropdown(null)
     }
   }, [isOpen])
 
@@ -42,13 +42,11 @@ const Navbar = () => {
           <Link href="/" onClick={() => setIsOpen(false)}>
             <div className="flex flex-col items-start leading-tight">
               <p className="font-bold text-xl font-syne text-gray-300">NEXUS</p>
-              <p className="font-thin text-[10px] uppercase tracking-widest text-white">
+              <p className="font-thin text-[14px] uppercase tracking-widest text-white">
                 Engineering & Energy
               </p>
             </div>
           </Link>
-
-          {/* Desktop Menu */}
           <div className="hidden xl:flex space-x-10 font-space-grotesk text-white">
             <NavigationMenu>
               <NavigationMenuList>
@@ -56,7 +54,7 @@ const Navbar = () => {
                   <NavigationMenuItem key={item.id}>
                     {item.dropdown ? (
                       <>
-                        <NavigationMenuTrigger className="bg-transparent text-white hover:bg-white/10">
+                        <NavigationMenuTrigger className="bg-transparent text-white hover:bg-white/10 text-md">
                           {item.content}
                         </NavigationMenuTrigger>
                         <NavigationMenuContent className="bg-black/80 backdrop-blur-3xl border-0">
@@ -86,7 +84,6 @@ const Navbar = () => {
             </NavigationMenu>
           </div>
 
-          {/* Mobile Toggle Button */}
           <button
             className="xl:hidden text-white p-2 outline-none z-110"
             onClick={() => setIsOpen(!isOpen)}
@@ -96,7 +93,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile & Tablet Menu Overlay */}
       <div className={`
         fixed inset-0 bg-black z-90 flex flex-col items-center justify-center
         transition-all duration-500 ease-in-out xl:hidden

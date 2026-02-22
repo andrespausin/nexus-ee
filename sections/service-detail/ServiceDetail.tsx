@@ -19,7 +19,7 @@ const ServiceDetails = ({ data }: Props) => {
             <h2 className="mt-2 text-3xl font-bold tracking-tight text-gray-200 sm:text-4xl">
               {data.title}
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-400">
+            <p className="mt-6 text-lg leading-8 text-gray-400 text-justify max-w-3xl">
               {data.text}
             </p>
             <div className="mt-10">

@@ -4,16 +4,15 @@ const ContactSection = () => {
   return (
     <section id="contact_us" className="w-full py-24 bg-black border-t border-white/5">
       <div className="max-w-7xl px-6 mx-auto">
-        <div className="mb-20 text-center md:text-left">
-          <span className="text-blue-500 font-mono text-xs tracking-[0.5em] uppercase block mb-4">
-            CONTÁCTANOS
-          </span>
-          <h2 className="text-white text-5xl md:text-7xl font-black uppercase tracking-tighter leading-none">
-            Iniciemos un <br />
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-600">
-              Proyecto
+        <div className="mb-32">
+          <div className="mb-16 border-l-2 border-blue-600 pl-6">
+            <span className="text-blue-500 font-mono text-sm tracking-[0.5em] uppercase block mb-4">
+              CONTÁCTANOS
             </span>
-          </h2>
+            <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
+              CON<span className="text-blue-600">TÁCTANOS</span>
+            </h2>
+          </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           <div className="lg:col-span-5 space-y-6">

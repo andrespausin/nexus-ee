@@ -1,5 +1,10 @@
 export const Items = [
   {
+    id: 0,
+    content: "Home",
+    reference: "/"
+  },
+  {
     id: 1,
     content: "Sobre nosotros",
     reference: "/about",
@@ -10,30 +15,24 @@ export const Items = [
     dropdown: [
       {
         id: 1,
-        title: "Servicio de Ingenieria civil",
-        description: "Descripcion del servicio de Ingenieria Civil",
-        reference: "/services/civil-engineer"
+        title: "Ingeniería, Arquitectura y Consultoría",
+        description: "Diseño integral y soluciones técnicas para proyectos de alta complejidad.",
+        reference: "/services/engineering"
       },
       {
         id: 2,
-        title: "Servicio de Project Manager",
-        description: "Descripcion del servicio de Project Manager",
+        title: "Gestión de proyectos",
+        description: "Gestión estratégica de recursos y tiempos para asegurar el éxito operativo.",
         reference: "/services/project-management"
-
       },
       {
         id: 3,
-        title: "Servicio de Andamios",
-        description: "Descripcion del servicio de Andamios",
-        reference: "/services/scaffolding"
+        title: "Ejecución de obras civiles",
+        description: "Construcción y soluciones de infraestructura con los más altos estándares.",
+        reference: "/services/civil-engineer"
       }
     ]
   },
-  // {
-  //   id: 4,
-  //   content: "Proyectos",
-  //   reference: "/#projects"
-  // },
   {
     id: 3,
     content: "Contáctanos",

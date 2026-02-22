@@ -27,7 +27,6 @@ export default async function Page({
       <ServiceHero
         imageURL={service.hero.ImageURL}
         firstTitle={service.hero.firstTitle}
-        secondTitle={service.hero.secondTitle}
         description={service.hero.description}
       />
       <ServiceFeature

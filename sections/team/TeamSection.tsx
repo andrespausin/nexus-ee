@@ -22,30 +22,24 @@ const TeamSection = () => {
 
   return (
     <section className="w-full py-24 bg-[#0a0a0a] relative overflow-hidden">
-      {/* --- FONDO --- */}
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none"
         style={{ backgroundImage: 'linear-gradient(#3b82f6 1px, transparent 1px), linear-gradient(90deg, #3b82f6 1px, transparent 1px)', backgroundSize: '40px 40px' }}>
       </div>
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/20 blur-[120px] pointer-events-none -z-10" />
-
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-blue-900/20 blur-[120px] pointer-events-none -z-10" />
       <div className="container mx-auto px-6 relative z-10">
-
-        {/* --- CABECERA --- */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-8">
           <div className="max-w-xl">
             <div className="mb-16 border-l-2 border-blue-600 pl-6">
               <span className="text-blue-500 font-mono text-xs tracking-[0.4em] uppercase mb-2 block">
-                NUESTRO EQUIPO
+                Nuestro Talento
               </span>
               <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white">
-                NUESTROS <br />
+                NUESTRO <br />
                 <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">
-                  CONSULTORES
+                  EQUIPO
                 </span>
               </h2>
             </div>
-
-            {/* TABS */}
             <div className="inline-flex p-1 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
               <button
                 onClick={() => setActiveTab('nacional')}
