@@ -11,7 +11,7 @@ const PartnersSection = () => {
               NUESTRAS
             </span>
             <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
-              ALIANZAS <span className="text-blue-600">ESTRATÉGICAS</span>
+              ALIANZAS <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">ESTRATÉGICAS</span>
             </h2>
           </div>
         </div>
