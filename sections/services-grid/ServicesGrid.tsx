@@ -12,7 +12,7 @@ const ServicesGrid = () => {
               NUESTRAS SOLUCIONES
             </span>
             <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
-              ¿QUÉ <span className="text-blue-600">HACEMOS?</span>
+              ¿QUÉ <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">HACEMOS?</span>
             </h2>
           </div>
         </div>

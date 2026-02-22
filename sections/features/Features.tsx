@@ -11,9 +11,9 @@ const Features = () => {
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 border-l-2 border-blue-600 pl-6">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white">
-            Soluciones 360° <br />
+            Ingeniería de <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">
-              en Infraestructura
+              Alto Impacto
             </span>
           </h2>
         </div>

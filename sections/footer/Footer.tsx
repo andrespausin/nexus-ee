@@ -34,17 +34,17 @@ const Footer = () => {
           <ul className="space-y-4 text-sm text-gray-400">
             <li>
               <Link href="/services/civil-engineer" className="hover:text-white transition-colors">
-                Ingeniería civil
-              </Link>
-            </li>
-            <li>
-              <Link href="/services/scaffolding" className="hover:text-white transition-colors">
-                Sistemas de Andamiaje
+                Ingeniería, Arquitectura y Consultoría
               </Link>
             </li>
             <li>
               <Link href="/services/project-management" className="hover:text-white transition-colors">
-                Project Management
+                Gestión de Proyectos
+              </Link>
+            </li>
+            <li>
+              <Link href="/services/civil-engineer" className="hover:text-white transition-colors">
+                Ejecución de Obras civiles
               </Link>
             </li>
             {/* <li>Consultoría Técnica</li> */}

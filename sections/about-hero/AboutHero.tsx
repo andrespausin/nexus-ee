@@ -17,8 +17,8 @@ const AboutHero = () => {
         <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-mono tracking-[0.3em] uppercase backdrop-blur-md">
           Sobre Nosotros
         </span>
-        <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight">
-          Ingeniería que <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">Construye el Futuro</span>
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight uppercase">
+          Ingeniería que construye el Futuro
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
           En Nexus, fusionamos la innovación técnica con la energía sostenible para desarrollar soluciones que impulsan el progreso industrial.

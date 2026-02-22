@@ -10,7 +10,7 @@ const ContactSection = () => {
               CONTÁCTANOS
             </span>
             <h2 className="text-white text-4xl md:text-6xl font-black uppercase tracking-tighter">
-              CON<span className="text-blue-600">TÁCTANOS</span>
+              Trabajemos <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">Juntos</span>
             </h2>
           </div>
         </div>

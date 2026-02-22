@@ -1,7 +1,7 @@
 
 const MissionVision = () => {
   return (
-    <section className="py-20 text-white relative overflow-hidden">
+    <section className="py-20 text-white relative overflow-hidden max-w-340">
       <div className="absolute top-0 right-0 w-125 h-125 bg-blue-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
