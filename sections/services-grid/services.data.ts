@@ -1,20 +1,20 @@
 export const servicesData = [
   {
-    title: "Ingeniería y Consultoría",
-    description: "Modelado 3D, cálculos estructurales y memorias técnicas.",
+    title: "Ingeniería, Arquitectura y Consultoría",
+    description: "Diseño integral, modelado BIM y cálculos estructurales avanzados para garantizar la viabilidad técnica de su proyecto.",
     image: "/ing-referencia.png",
-    link: "/servicios#ingenieria"
+    link: "/services/engineering"
   },
   {
-    title: "Sistemas de Andamiaje",
-    description: "Suministro y montaje certificado bajo normativa ANSI/OSHA.",
-    image: "/andamios.webp",
-    link: "/servicios#andamios"
-  },
-  {
-    title: "Project Management",
-    description: "Supervisión técnica y control operativo integral de obra.",
+    title: "Gestión de proyectos",
+    description: "Gestión estratégica y representación técnica independiente para optimizar recursos y asegurar el cumplimiento de plazos.",
     image: "/pm.jpg",
-    link: "/servicios#gestion"
+    link: "/services/project-management"
+  },
+  {
+    title: "Ejecución de obras civiles",
+    description: "Construcción de infraestructura técnica y sistemas de acceso seguro bajo los más estrictos estándares de calidad y seguridad.",
+    image: "/andamios.webp",
+    link: "/services/civil-engineer"
   },
 ];

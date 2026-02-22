@@ -10,13 +10,10 @@ const Features = () => {
     <section className="w-full bg-black py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 border-l-2 border-blue-600 pl-6">
-          <span className="text-blue-500 font-mono text-xs tracking-[0.4em] uppercase mb-2 block">
-            NUESTRO COMPROMISO
-          </span>
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-white">
-            Ingeniería que <br />
+            Soluciones 360° <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-blue-700">
-              construye confianza
+              en Infraestructura
             </span>
           </h2>
         </div>

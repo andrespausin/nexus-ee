@@ -58,7 +58,7 @@ const ContactForm = () => {
           />
         </div>
 
-        <button className="w-full py-5 bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-[0.3em] text-[10px] rounded-2xl transition-all flex items-center justify-center gap-4 shadow-xl shadow-blue-900/20 group"
+        <button className="w-full py-5 bg-blue-600 hover:bg-blue-500 text-white font-black uppercase tracking-[0.3em] text-[10px] rounded-2xl transition-all flex items-center justify-center gap-4 shadow-xl shadow-blue-900/20 group cursor-pointer"
           type="submit">
           Enviar
           <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">

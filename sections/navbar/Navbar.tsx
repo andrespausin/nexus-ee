@@ -26,7 +26,7 @@ const Navbar = () => {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = 'unset'
-      setOpenDropdown(null) // Reseteamos los dropdowns al cerrar el menú
+      setOpenDropdown(null)
     }
   }, [isOpen])
 
