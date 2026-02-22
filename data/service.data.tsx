@@ -64,8 +64,7 @@ export const serviceData = [
   {
     slug: "civil-engineer",
     hero: {
-      firstTitle: "Ejecución de",
-      secondTitle: "Obras y Sistemas de Acceso",
+      firstTitle: "Ejecución de Obras y Sistemas de Acceso",
       description: "Construcción de infraestructura en el sector público y privado. Expertos en sistemas de andamiaje certificado y soluciones técnicas para la continuidad de proyectos complejos.",
       ImageURL: "/andamios.jpg"
     },
