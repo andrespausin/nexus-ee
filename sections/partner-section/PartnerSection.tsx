@@ -3,7 +3,7 @@ import { Partners } from "./partner.data";
 
 const PartnersSection = () => {
   return (
-    <section id="contact_us" className="w-full py-24 bg-black border-t border-white/5">
+    <section className="w-full py-24 bg-black border-t border-white/5">
       <div className="max-w-7xl px-6 mx-auto">
         <div className="mb-32">
           <div className="mb-16 border-l-2 border-blue-600 pl-6">
