@@ -48,7 +48,7 @@ const Hero = () => {
             </h1>
             <div className="relative w-32 h-32 md:w-60 md:h-60 mx-auto">
               <Image
-                src="/nexus-bg.png"
+                src="/nexus.png"
                 alt="Logo Nexus"
                 fill
                 className="object-contain"
