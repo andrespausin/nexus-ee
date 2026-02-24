@@ -2,6 +2,7 @@ import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Newsreader } from "next/
 import Navbar from "@/sections/navbar/Navbar";
 import "./globals.css";
 import Footer from "@/sections/footer/Footer";
+import { ComingSoon } from "@/sections/home-coming-soon/ComingSoon";
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -45,9 +46,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
       <body className="bg-black">
-        <Navbar />
+        <ComingSoon />
+        {/* <Navbar />
         {children}
-        <Footer />
+        <Footer /> */}
       </body>
     </html>
   );
