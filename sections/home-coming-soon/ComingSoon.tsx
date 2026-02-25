@@ -39,10 +39,10 @@ export const ComingSoon = () => {
             administracion@nexusee.com
           </a>
           <a
-            href="tel:+34XXXXXXXXX"
+            href="tel:+34624951014"
             className="text-blue-400 hover:text-blue-300 transition-colors"
           >
-            +XX XXX XXX XXX
+            +34 624 95 10 14
           </a>
         </div>
       </div>
