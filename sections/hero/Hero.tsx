@@ -12,14 +12,14 @@ const Hero = () => {
     offset: ["start start", "end start"],
   });
 
-  const opacityTitle = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-  const yTitle = useTransform(scrollYProgress, [0, 0.1], [0, -40]);
+  const opacityTitle = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
+  const yTitle = useTransform(scrollYProgress, [0, 0.08], [0, -40]);
 
-  const opacityDesc = useTransform(scrollYProgress, [0.1, 0.25], [0, 1]);
-  const yDesc = useTransform(scrollYProgress, [0.15, 0.25], [40, 0]);
+  const opacityDesc = useTransform(scrollYProgress, [0.08, 0.18], [0, 1]);
+  const yDesc = useTransform(scrollYProgress, [0.01, 0.18], [40, 0]);
 
   return (
-    <section ref={containerRef} className="relative h-[300vh] bg-black w-full">
+    <section ref={containerRef} className="relative h-[200vh] bg-black w-full">
       <div className="sticky top-0 h-screen w-screen left-0 overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -65,7 +65,7 @@ const Hero = () => {
             className="absolute w-full max-w-4xl px-6 text-center"
           >
             <p className="text-white text-lg md:text-5xl mb-10 max-w-5xl mx-auto font-extrabold">
-              Controlamos tu obra de principio a fin para que tu inversión esté siempre bajo control.
+              Gestionamos tu obra en todas las fases, optimizando los costes y garantizando rentabilidad.
             </p>
             <Link
               className="inline-block p-2 px-4 rounded-full bg-blue-600 text-white font-bold text-md transition-all hover:bg-blue-500 hover:scale-105"
