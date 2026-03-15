@@ -14,7 +14,7 @@ export async function sendEmail(formData: FormData) {
   try {
     const data = await resend.emails.send({
       from: 'Nexus Web <onboarding@resend.dev>',
-      to: ['candrespausin2001@gmail.com'],
+      to: ['administracion@nexusee.com'],
       replyTo: email,
       subject: `Nuevo mensaje web de ${name}`,
       text: `Mensaje: ${message}`,
