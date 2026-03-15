@@ -13,7 +13,7 @@ export default function Home() {
       <Features />
       <SafetyBanner />
       <ServicesGrid />
-      <PartnersSection />
+      {/* <PartnersSection /> */}
       <ContactSection />
     </section>
   );
