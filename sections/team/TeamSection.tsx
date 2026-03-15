@@ -18,11 +18,7 @@ import { useState, useMemo } from 'react'
 import { Globe, MapPin } from 'lucide-react'
 
 const TeamSection = () => {
-  const [activeTab, setActiveTab] = useState<'nacional' | 'internacional'>('nacional');
 
-  const filteredData = useMemo(() => {
-    return TeamData.filter((item) => item.category === activeTab)
-  }, [activeTab])
   return (
     <section className="w-full py-24 px-6 ">
       <div className="max-w-7xl mx-auto">
@@ -34,7 +30,7 @@ const TeamSection = () => {
             </span>
           </h2>
         </div>
-        <div className="inline-flex p-1 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
+        {/* <div className="inline-flex p-1 bg-white/5 border border-white/10 rounded-full backdrop-blur-md">
           <button
             onClick={() => setActiveTab('nacional')}
             className={`px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 flex items-center gap-2 ${activeTab === 'nacional' ? 'bg-blue-600 text-white' : 'text-gray-400 hover:text-white'}`}
@@ -47,20 +43,22 @@ const TeamSection = () => {
           >
             <Globe className="w-3.5 h-3.5" /> Internacionales
           </button>
-        </div>
+        </div> */}
       </div>
+      {/* SECCIÓN GRUPO DE CARDS */}
       <div className="max-w-340 font-extrabold mx-auto mt-8">
         <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-4 gap-5">
-          {filteredData.map((item) => {
+          {TeamData.map((item) => {
             return (
               <Dialog key={item.id}>
                 <DialogTrigger className="cursor-pointer w-full group">
                   <Card className='relative w-full h-100 overflow-hidden rounded-3xl border-none'>
-                    <div className="absolute inset-0 z-0 transition-transform duration-500">
+                    <div className={`absolute inset-0 z-0 transition-transform duration-500`}>
                       <Image
-                        src={item.imageURL}
+                        src={item.cardImageURL}
                         alt="Fondo Card"
                         fill
+                        style={{ objectPosition: item.zoom || "center 10%" }}
                         className="object-cover transition-transform duration-500 group-hover:scale-105" />
                       <div className="absolute inset-0 bg-black/40" />
                     </div>
@@ -74,18 +72,18 @@ const TeamSection = () => {
                     </div>
                   </Card>
                 </DialogTrigger>
-                <DialogContent className="bg-white text-black max-w-2xl lg:max-w-4xl! overflow-y-auto w-[92vw] max-h-[80vh] p-0 border-none shadow-2xl">
+                <DialogContent className="bg-white text-black max-w-2xl lg:max-w-6xl! overflow-y-auto w-[92vw] max-h-[80vh] p-0 border-none shadow-2xl">
                   <div className="flex flex-col md:flex-row h-full">
                     <div className="relative w-full md:w-2/5 h-64 md:h-auto min-h-75 overflow-hidden">
                       <Image
-                        src={item.imageURL}
+                        src={item.dialogImageURL ? item.dialogImageURL : item.cardImageURL}
                         alt={item.name}
                         fill
                         className="object-cover"
                       />
                       <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent md:hidden" />
                     </div>
-                    <div className="w-full md:w-3/5 p-8 md:p-10 flex flex-col justify-center">
+                    <div className="w-full md:w-3/5 xl:w-full p-8 md:p-10 flex flex-col justify-center">
                       <DialogHeader className="text-left">
                         <div className="mb-2">
                           <span className="text-blue-600 font-mono text-xs tracking-[0.3em] uppercase">
@@ -99,7 +97,11 @@ const TeamSection = () => {
                       <div className="space-y-4">
                         <div className="w-12 h-1 bg-blue-600 rounded-full" />
                         <DialogDescription className="text-gray-600 text-md text-justify lg:text-lg leading-relaxed">
-                          {item.content || "Especialista con amplia trayectoria en el sector de ingeniería, enfocado en resultados de alta eficiencia técnica."}
+                          {item.content ? (
+                            <span dangerouslySetInnerHTML={{ __html: item.content }} />
+                          ) : (
+                            "Especialista con amplia trayectoria..."
+                          )}
                         </DialogDescription>
                         <div className="pt-6 border-t border-gray-100 flex gap-4">
                           <div className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
