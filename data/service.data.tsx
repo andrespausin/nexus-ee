@@ -15,18 +15,18 @@ export const serviceData = [
         icon: <ShieldCheck />
       },
       {
-        title: "Auditoría de Licitaciones",
-        desc: "Análisis comparativo de ofertas para detectar partidas infladas y asegurar la contratación de proveedores bajo condiciones justas.",
+        title: "Licitaciones",
+        desc: "Análisis comparativo de ofertas para detectar partidas sobrevaloradas y asegurar la contratación de proveedores bajo condiciones justas.",
         icon: <SearchCheck />
       },
       {
         title: "Optimización de Costes",
-        desc: "Ingeniería de valor aplicada para reducir el presupuesto sin comprometer la integridad estructural ni la calidad técnica.",
+        desc: "Ingeniería Financiera aplicada, con capacidad de optimizar el presupuesto de obra, sin comprometer la calidad de los entregables finales.",
         icon: <BarChart3 />
       }
     ],
     details: {
-      title: "Su aliado técnico independiente",
+      title: "Asesoría Técnica Profesional",
       text: "En Nexus, no solo diseñamos estructuras; blindamos su inversión. Nuestra consultoría actúa como un filtro de calidad que previene desviaciones presupuestarias y asegura que lo proyectado en planos se ejecute con precisión quirúrgica en el campo.",
       image: "/ing-referencia.png"
     }
@@ -36,17 +36,17 @@ export const serviceData = [
     hero: {
       firstTitle: "Gestión de Proyectos",
       description: "Dirección estratégica de activos y proyectos de construcción. Maximizamos la eficiencia operativa mediante un control riguroso de la triple restricción: alcance, tiempo y costo.",
-      ImageURL: "/project-management.jpg"
+      ImageURL: "/pm.png"
     },
     features: [
       {
-        title: "Blindaje Financiero",
+        title: "Indicadores de Gestión",
         desc: "Implementamos sistemas de monitoreo en tiempo real para neutralizar desviaciones presupuestarias y optimizar el flujo de caja.",
         icon: <CirclePoundSterling />
       },
       {
-        title: "Planificación y Control",
-        desc: "Programación avanzada (Primavera / MS Project) y análisis de Curvas S para garantizar el cumplimiento estricto de los hitos.",
+        title: "Control de Proyectos",
+        desc: "Desarrollamos una programación avanzada de obra mediante herramientas líderes del sector como Primavera P6 y Microsoft Project, integrando metodologías profesionales de gestión de proyectos.",
         icon: <Clock />
       },
       {
@@ -56,17 +56,17 @@ export const serviceData = [
       }
     ],
     details: {
-      title: "Control absoluto sobre el cronograma",
-      text: "No solo monitoreamos el avance; lo garantizamos. Utilizamos herramientas de clase mundial para medir el rendimiento real frente al planificado, permitiéndonos tomar decisiones proactivas para recuperar tiempos y blindar la fecha de entrega de su inversión.",
+      title: "Control total del cronograma",
+      text: "Gestionamos activamente el cumplimiento del plazo, aplicando metodologías avanzadas de planificación y control, apoyadas en herramientas de gestión de proyectos de estándar internacional, que nos permiten comparar el progreso real con el planificado en tiempo real.",
       image: "/project-management.jpg"
     }
   },
   {
     slug: "civil-engineer",
     hero: {
-      firstTitle: "Ejecución de Obras y Sistemas de Acceso",
+      firstTitle: "EJECUCION DE OBRAS CIVILES Y TRABAJOS EN ALTURA",
       description: "Construcción de infraestructura en el sector público y privado. Expertos en sistemas de andamiaje certificado y soluciones técnicas para la continuidad de proyectos complejos.",
-      ImageURL: "/andamios.jpg"
+      ImageURL: "/andamiaje-1.jpeg"
     },
     features: [
       {
@@ -87,8 +87,8 @@ export const serviceData = [
     ],
     details: {
       title: "Capacidad operativa sin fronteras",
-      text: "Desde el desarrollo de obra civil para el sector público hasta infraestructuras privadas de alta gama, aportamos la logística y el rigor técnico necesario. Nuestros sistemas de andamiaje propios nos permiten garantizar la seguridad en altura, mientras que nuestra unidad de rescate asegura que ningún proyecto quede en el olvido por problemas de gestión previos.",
-      image: "/andamios.webp"
+      text: "Desde proyectos de obra civil para el sector público hasta infraestructuras privadas de alto nivel, aportamos la capacidad técnica, logística y organizativa necesaria para ejecutar proyectos complejos con máxima eficiencia. Disponemos de sistemas de andamiaje propios y soluciones especializadas para trabajos en altura, garantizando seguridad, control operativo y rapidez de ejecución. Además, nuestra experiencia en gestión y recuperación de proyectos nos permite intervenir de forma estratégica para reconducir obras con retrasos o desviaciones, asegurando la continuidad y el éxito de cada proyecto.",
+      image: "/andamiaje.jpeg"
     }
   }
 ];
