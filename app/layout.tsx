@@ -2,6 +2,8 @@ import { Roboto, Instrument_Serif, Syne, Space_Grotesk, Newsreader } from "next/
 import Navbar from "@/sections/navbar/Navbar";
 import "./globals.css";
 import Footer from "@/sections/footer/Footer";
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ComingSoon } from "@/sections/home-coming-soon/ComingSoon";
 
 const robotoSans = Roboto({
@@ -50,6 +52,8 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
