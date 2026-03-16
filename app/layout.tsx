@@ -4,7 +4,8 @@ import "./globals.css";
 import Footer from "@/sections/footer/Footer";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { ComingSoon } from "@/sections/home-coming-soon/ComingSoon";
+import { MotionConfig } from "framer-motion";
+import 'devicon/devicon.min.css';
 
 const robotoSans = Roboto({
   variable: "--font-roboto-sans",
@@ -45,15 +46,15 @@ export default function RootLayout({
     <html lang="en" className={`${instrumentSerif.variable} ${syne.variable} ${spaceGrotesk.variable} ${robotoSans.variable} ${newsreader.variable}`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
       <body className="bg-black">
-        {/* <ComingSoon /> */}
-        <Navbar />
-        {children}
-        <Footer />
-        <Analytics />
-        <SpeedInsights />
+        <MotionConfig reducedMotion="user">
+          <Navbar />
+          {children}
+          <Footer />
+          <Analytics />
+          <SpeedInsights />
+        </MotionConfig>
       </body>
     </html>
   );
