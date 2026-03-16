@@ -67,14 +67,14 @@ export const TeamData: TeamType[] = [
   //   zoom: "object-[center_20%]",
   //   category: "nacional"
   // },
-  // {
-  //   id: 7,
-  //   name: "Mary Aldana",
-  //   jobTitle: "Project Manager",
-  //   content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
-  //   cardImageURL: "/MARY-1.JPG",
-  //   dialogImageURL: "/MARY-2.JPG",
-  //   zoom: "object-[center_20%]",
-  //   category: "nacional"
-  // },
+  {
+    id: 7,
+    name: "Mary Aldana",
+    jobTitle: "Project Manager",
+    content: "<b>Project Manager</b> e <b>Ingeniero Civil</b> (Universidad de Oriente, Venezuela), con más de 8 años de experiencia en planificación y control de proyectos de infraestructura a nivel internacional.<br/></br/>Con <b>amplia experiencia en entornos PMO</b>, ha gestionado <b>cronogramas, curvas S, KPIs y análisis de desvíos</b> en proyectos multidisciplinarios de gran envergadura, incluyendo obras de infraestructura hidráulica en Argentina, proyectos eléctricos de alta tensión en Venezuela y operaciones B2B de alto volumen. Su experiencia abarca desde la inspección de campo hasta la coordinación técnica y contractual, integrando herramientas como <b>MS Project, Primavera P6, Power BI y Excel avanzado</b> para la generación de reportes y soporte en la toma de decisiones.<br/><br/>Como <b>Project Manager</b>, aporta a Nexus capacidad de control operativo, visión analítica orientada a la mejora continua y experiencia en la gestión de equipos multiculturales bajo altos estándares técnicos",
+    cardImageURL: "/MARY-1.JPG",
+    dialogImageURL: "/MARY-2.JPG",
+    zoom: "object-[center_20%]",
+    category: "nacional"
+  },
 ];
