@@ -5,6 +5,7 @@ import Footer from "@/sections/footer/Footer";
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { MotionConfig } from "framer-motion";
+import CookieConsentComponent from "@/components/ui/CookieConsent";
 import 'devicon/devicon.min.css';
 
 const robotoSans = Roboto({
@@ -54,6 +55,7 @@ export default function RootLayout({
           <Footer />
           <Analytics />
           <SpeedInsights />
+          <CookieConsentComponent />
         </MotionConfig>
       </body>
     </html>
