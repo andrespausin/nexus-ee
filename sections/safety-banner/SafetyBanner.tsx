@@ -5,11 +5,10 @@ const SafetyBanner = () => {
         <div className="flex-1 text-center md:text-left">
           <h2 className="text-white text-3xl md:text-4xl font-black uppercase tracking-tighter leading-none mb-4">
             La seguridad no es una opción, <br />
-            <span className="text-blue-200">es nuestro estándar</span>
+            <span className="text-blue-200">es nuestro compromiso</span>
           </h2>
-          <p className="text-blue-50 text-lg md:text-xl font-medium max-w-2xl">
-            Garantizamos cero accidentes mediante el cumplimiento estricto de normativas
-            internacionales ANSI/OSHA en cada proyecto.
+          <p className="text-blue-50 text-lg md:text-xl font-medium max-w-4xl">
+            La seguridad es un pilar fundamental en nuestra gestión de proyectos. Operamos bajo estrictos estándares nacionales e internacionales, aplicando rigurosos protocolos de prevención para proteger a las personas, las instalaciones y el entorno.
           </p>
         </div>
         <div className="shrink-0 border-2 border-blue-400 rounded-full p-8 flex items-center justify-center bg-blue-700/50">

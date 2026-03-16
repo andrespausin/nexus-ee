@@ -2,26 +2,34 @@ import Image from "next/image";
 
 const AboutHero = () => {
   return (
-    <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[80vh] md:h-[70vh] w-full flex items-center lg:items-start justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
+        <Image
+          src="/GRUPAL-GEMINI.png"
+          alt="Equipo Nexus"
+          fill
+          className="hidden md:block object-cover object-top"
+          priority
+        />
+        {/* Mobile */}
         <Image
           src="/team.avif"
           alt="Equipo Nexus"
           fill
-          className="object-cover"
+          className="block md:hidden object-cover object-top"
           priority
         />
         <div className="absolute inset-0 bg-linear-to-r from-slate-900/90 via-blue-900/80 to-slate-900/90 mix-blend-multiply" />
       </div>
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto space-y-6">
-        <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-mono tracking-[0.3em] uppercase backdrop-blur-md">
+        <span className="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-400/30 text-blue-300 text-xs font-mono tracking-[0.3em] uppercase backdrop-blur-md mt-10">
           Sobre Nosotros
         </span>
         <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight uppercase">
-          Ingeniería que construye el Futuro
+          Ingeniería que construye Futuro
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-          En Nexus, fusionamos la innovación técnica con la energía sostenible para desarrollar soluciones que impulsan el progreso industrial.
+          {/* En Nexus, fusionamos la innovación técnica con la energía sostenible para desarrollar soluciones que impulsan el progreso industrial. */}
         </p>
       </div>
       <div className="absolute inset-0 bg-linear-to-b from-black/20 via-blue-900/20 to-black" />

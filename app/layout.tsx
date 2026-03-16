@@ -46,10 +46,10 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
       <body className="bg-black">
-        <ComingSoon />
-        {/* <Navbar />
+        {/* <ComingSoon /> */}
+        <Navbar />
         {children}
-        <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

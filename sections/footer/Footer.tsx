@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   return (
     <footer className="w-full bg-black text-white border-t border-white/10 pt-16 pb-8">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-1">
           <h2 className="text-2xl font-black tracking-tighter uppercase mb-4">
             Nexus <span className="text-blue-500">Engineering</span>
@@ -12,14 +12,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm leading-relaxed">
             Soluciones integrales de ingeniería, gestión de proyectos y sistemas de acceso seguro para la industria moderna.
           </p>
-          <div className="flex space-x-4 mt-6">
-            <Link href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
-              <Linkedin size={20} />
-            </Link>
-            <Link href="#" className="text-gray-400 hover:text-blue-500 transition-colors">
-              <Instagram size={20} />
-            </Link>
-          </div>
+
         </div>
         <div>
           <h3 className="font-bold uppercase tracking-wider text-sm mb-6">Explorar</h3>
@@ -55,16 +48,22 @@ const Footer = () => {
           <ul className="space-y-4 text-sm text-gray-400">
             <li className="flex items-start space-x-3">
               <MapPin size={18} className="text-blue-500 shrink-0" />
-              <span>Av. de la Castellana, 14
-                Madrid, España.</span>
+              <span>Calle de las Huertas Nº14, Esc 2, Planta Nº2, Puerta B, Paracuellos de Jarama, Madrid.</span>
             </li>
             <li className="flex items-center space-x-3">
               <Phone size={18} className="text-blue-500 shrink-0" />
-              <span>+XX XXX XXX XXX</span>
+              <a
+                href="https://wa.me/34624951014"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                +34 624 95 10 14
+              </a>
             </li>
-            <li className="flex items-center space-x-3">
+            <li className="flex items-center space-x-3 text-wrap">
               <Mail size={18} className="text-blue-500 shrink-0" />
-              <span>admin@nexusee.com</span>
+              <a href="mailto:administracion@nexusee.com" className="hover:text-white transition-colors">administracion@nexusee.com</a>
             </li>
           </ul>
         </div>

@@ -29,7 +29,7 @@ const ContactForm = () => {
       <form ref={formRef} className="space-y-6" action={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-2">
-            <label className="ml-4 text-[10px] font-mono text-gray-500 uppercase tracking-widest">Nombre</label>
+            <label className="ml-4  text-[12px] lg:text-[15px] font-mono text-gray-500 uppercase tracking-widest">Nombre</label>
             <input
               type="text"
               name="name"
@@ -38,7 +38,7 @@ const ContactForm = () => {
             />
           </div>
           <div className="space-y-2">
-            <label className="ml-4 text-[10px] font-mono text-gray-500 uppercase tracking-widest">Email</label>
+            <label className="ml-4 text-[12px] lg:text-[15px] font-mono text-gray-500 uppercase tracking-widest">Email</label>
             <input
               type="email"
               name="email"
@@ -49,7 +49,7 @@ const ContactForm = () => {
         </div>
 
         <div className="space-y-2">
-          <label className="ml-4 text-[10px] font-mono text-gray-500 uppercase tracking-widest">Mensaje</label>
+          <label className="ml-4  text-[12px] lg:text-[15px] font-mono text-gray-500 uppercase tracking-widest">Mensaje</label>
           <textarea
             rows={5}
             name="message"

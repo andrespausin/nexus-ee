@@ -1,17 +1,17 @@
 export const featureData = [
   {
     id: 1,
-    title: "Pre-construcción",
-    description: "Ingeniería y Consultoría Técnica. Transformamos ideas en planos ejecutables y presupuestos reales."
+    title: "Gestión de Proyectos",
+    description: "Ingeniería y consultoría técnica. Convertimos conceptos en realidades mediante estudios previos y proyectos técnicos que aseguran la viabilidad."
   },
   {
     id: 2,
     title: "Gestión Operativa",
-    description: "Project Management Independiente. Vigilamos su inversión, evitando sobrecostes y conflictos de interés."
+    description: "Project Management independiente. Controlamos plazos, costes, calidad y riesgos para proteger su inversión en cada fase del proyecto."
   },
   {
     id: 3,
     title: "Ejecución y Cierre",
-    description: "Construcción y Entrega. Finalización técnica bajo los más altos estándares de seguridad internacional."
+    description: "Supervisión de obra, coordinación técnica y entrega final. Aseguramos una ejecución eficiente, segura y alineada con los estándares más exigentes."
   }
 ]

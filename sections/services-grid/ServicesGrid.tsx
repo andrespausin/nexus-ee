@@ -51,8 +51,13 @@ const ServicesGrid = () => {
                   {service.title}
                 </h3>
 
-                <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-10 max-w-sm">
-                  {service.description}
+                <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-10 max-w-sm text-justify">
+                  {service.description ? (
+                    <span dangerouslySetInnerHTML={{ __html: service.description }} />
+                  ) : (
+                    ""
+                  )
+                  }
                 </p>
                 <div className="flex items-center gap-4 group/btn">
                   <span className="text-white text-xs font-bold uppercase tracking-[0.3em]">
