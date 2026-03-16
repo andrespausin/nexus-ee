@@ -56,13 +56,14 @@ const Footer = () => {
                 href="https://wa.me/34624951014"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
               >
                 +34 624 95 10 14
               </a>
             </li>
             <li className="flex items-center space-x-3 text-wrap">
               <Mail size={18} className="text-blue-500 shrink-0" />
-              <a href="mailto:administracion@nexusee.com">administracion@nexusee.com</a>
+              <a href="mailto:administracion@nexusee.com" className="hover:text-white transition-colors">administracion@nexusee.com</a>
             </li>
           </ul>
         </div>
