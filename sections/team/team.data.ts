@@ -21,7 +21,7 @@ export const TeamData: TeamType[] = [
   }, {
     id: 2,
     name: "Claudia Arvelaiz",
-    jobTitle: "Gerente de Proyectos – Planificación de Obras",
+    jobTitle: "Gerente de Proyectos y Planificación de Obras",
     content: "<b>Ingeniera Civil</b> (Universidad de Oriente) con <b>Máster en Project Management</b>. Se especializa en la planificación, control y gestión estratégica de proyectos de infraestructura, integrando metodologías avanzadas para el aseguramiento de objetivos técnicos y operativos.<br/><br/>Cuenta con una sólida trayectoria en sectores <b>industriales y energéticos</b>, liderando proyectos de alta complejidad como refinerías y grandes instalaciones. Destaca por su dominio en la <b>planificación integral, coordinación multidisciplinaria y gestión de riesgos</b>, garantizando la eficiencia operativa y el cumplimiento de plazos en entornos de alta exigencia técnica.<br/><br/>En <b>Nexus Engineering & Energy</b>, actúa como <b>Gerente de Proyectos</b> especializada en planificación. Lidera la estructuración de cronogramas y la optimización de recursos, implementando sistemas de control que aseguran la ejecución de proyectos complejos bajo los más altos estándares de calidad y seguridad.</p>",
     cardImageURL: "/CLAUDIA-1.JPG",
     dialogImageURL: "/CLAUDIA-2.JPG",
@@ -57,24 +57,24 @@ export const TeamData: TeamType[] = [
     zoom: "object-[center_20%]",
     category: "nacional"
   },
-  {
-    id: 6,
-    name: "Jesús Medina",
-    jobTitle: "Jefe de Producción",
-    content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
-    cardImageURL: "/JESUS-1.JPG",
-    dialogImageURL: "/JESUS-2.JPG",
-    zoom: "object-[center_20%]",
-    category: "nacional"
-  },
-  {
-    id: 7,
-    name: "Mary Aldana",
-    jobTitle: "Project Manager",
-    content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
-    cardImageURL: "/MARY-1.JPG",
-    dialogImageURL: "/MARY-2.JPG",
-    zoom: "object-[center_20%]",
-    category: "nacional"
-  },
+  // {
+  //   id: 6,
+  //   name: "Jesús Medina",
+  //   jobTitle: "Jefe de Producción",
+  //   content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
+  //   cardImageURL: "/JESUS-1.JPG",
+  //   dialogImageURL: "/JESUS-2.JPG",
+  //   zoom: "object-[center_20%]",
+  //   category: "nacional"
+  // },
+  // {
+  //   id: 7,
+  //   name: "Mary Aldana",
+  //   jobTitle: "Project Manager",
+  //   content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
+  //   cardImageURL: "/MARY-1.JPG",
+  //   dialogImageURL: "/MARY-2.JPG",
+  //   zoom: "object-[center_20%]",
+  //   category: "nacional"
+  // },
 ];
