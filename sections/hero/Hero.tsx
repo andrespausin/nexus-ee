@@ -12,14 +12,14 @@ const Hero = () => {
     offset: ["start start", "end start"],
   });
 
-  const opacityTitle = useTransform(scrollYProgress, [0, 0.08], [1, 0]);
-  const yTitle = useTransform(scrollYProgress, [0, 0.08], [0, -40]);
+  const opacityTitle = useTransform(scrollYProgress, [0, 0.04], [1, 0]);
+  const yTitle = useTransform(scrollYProgress, [0, 0.04], [0, -40]);
 
-  const opacityDesc = useTransform(scrollYProgress, [0.08, 0.18], [0, 1]);
-  const yDesc = useTransform(scrollYProgress, [0.01, 0.18], [40, 0]);
+  const opacityDesc = useTransform(scrollYProgress, [0.04, 0.05], [0, 1]);
+  const yDesc = useTransform(scrollYProgress, [0.01, 0.04], [40, 0]);
 
   return (
-    <section ref={containerRef} className="relative h-[200vh] bg-black w-full">
+    <section ref={containerRef} className="relative h-[160vh] bg-black w-full">
       <div className="sticky top-0 h-screen w-screen left-0 overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 w-full h-full">
           <Image
