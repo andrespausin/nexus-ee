@@ -57,16 +57,16 @@ export const TeamData: TeamType[] = [
     zoom: "object-[center_20%]",
     category: "nacional"
   },
-  // {
-  //   id: 6,
-  //   name: "Jesús Medina",
-  //   jobTitle: "Jefe de Producción",
-  //   content: "<b>Arquitecta</b> (UJAP, Venezuela) y <b>Máster en Arquitectura Sostenible</b> por la Universidad Antonio de Nebrija (Madrid, España). Su formación especializada integra el desarrollo técnico de proyectos, eficiencia energética y el uso avanzado de <b>metodologías BIM</b> aplicadas al diseño y coordinación integral. <br/><br/> Con una sólida trayectoria en arquitectura e interiorismo, destaca por su dominio en el modelado 3D y la visualización arquitectónica, gestionando con precisión herramientas como Revit, AutoCAD y software de renderizado para transformar conceptos en documentación técnica detallada. <br/><br/> Actualmente, se desempeña en la <b>coordinación de modelos BIM</b> dentro de entornos multidisciplinarios, garantizando la integración eficiente de información y el cumplimiento de altos estándares de precisión en proyectos complejos de ingeniería y arquitectura.",
-  //   cardImageURL: "/JESUS-1.JPG",
-  //   dialogImageURL: "/JESUS-2.JPG",
-  //   zoom: "object-[center_20%]",
-  //   category: "nacional"
-  // },
+  {
+    id: 6,
+    name: "Jesús Medina",
+    jobTitle: "Jefe de Producción",
+    content: "<b>Ingeniero Civil</b> con más de <b>15 años de experiencia</b> en el sector de la construcción, participando en proyectos de diversa escala, desde obras residenciales hasta infraestructuras de transporte. Ha destacado como Jefe de Tramo en la <b>Línea 2 del Metro de Panamá</b>, así como en roles de Jefe de Obra y Gerente de Operaciones.<br/><br/>Es experto en la <b>planificación, ejecución y control de costes</b>, liderando todas las fases del proceso constructivo con un enfoque riguroso en la seguridad y la optimización de recursos. Su perfil combina una sólida base técnica con habilidades avanzadas en <b>metodología BIM y gestión de equipos</b> multidisciplinares en entornos de alta exigencia.<br/><br/>Su incorporación al equipo de <b>Nexus Engineering & Energy</b> refuerza el compromiso con la excelencia técnica y el control de ejecución. Aporta una visión integral para la coordinación de proyectos complejos, asegurando resultados de alta precisión y garantizando el cumplimiento de los estándares de calidad más elevados.</p>",
+    cardImageURL: "/JESUS-1.JPG",
+    dialogImageURL: "/JESUS-2.JPG",
+    zoom: "object-[center_20%]",
+    category: "nacional"
+  },
   {
     id: 7,
     name: "Mary Aldana",
