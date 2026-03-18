@@ -9,7 +9,7 @@ interface Props {
 
 const ServiceHero = ({ imageURL, firstTitle, secondTitle, description }: Props) => {
   return (
-    <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden mt-20 lg:mt-0">
       <div className="absolute inset-0 z-0">
         <Image
           src={imageURL}
